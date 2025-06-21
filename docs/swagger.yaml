@@ -1,0 +1,84 @@
+openapi: 3.0.3
+info:
+  title: API de Reservas Hoteleras
+  version: 1.0.0
+  description: API para gestionar reservas en hoteles
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/reservas:
+    get:
+      summary: Obtener todas las reservas
+      responses:
+        '200':
+          description: Lista de reservas
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Reserva'
+    post:
+      summary: Crear una reserva
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReservaInput'
+      responses:
+        '201':
+          description: Reserva creada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reserva'
+components:
+  schemas:
+    Reserva:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        hotel:
+          type: string
+          example: Hotel Paraíso
+        tipo_habitacion:
+          type: string
+          example: doble
+        num_huespedes:
+          type: integer
+          example: 2
+        fecha:
+          type: string
+          format: date
+          example: 2023-05-15
+        estado:
+          type: string
+          example: confirmada
+    ReservaInput:
+      type: object
+      properties:
+        hotel:
+          type: string
+          example: Hotel Paraíso
+        tipo_habitacion:
+          type: string
+          example: doble
+        num_huespedes:
+          type: integer
+          example: 2
+        fecha:
+          type: string
+          format: date
+          example: 2023-05-15
+        estado:
+          type: string
+          example: confirmada
+      required:
+        - hotel
+        - tipo_habitacion
+        - num_huespedes
+        - fecha
+        - estado
