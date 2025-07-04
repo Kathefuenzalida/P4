@@ -28,13 +28,15 @@ reservas-api/
 
 1. Clonar el repositorio  
 En bash:
-git clone https://github.com/tu-usuario/reservas-api.git
-Instalar dependencias
+git clone https://github.com/Kathefuenzalida/P4.git
+
+2. Instalar dependencias
 
 bash
 Copiar código
 npm install
-Ejecutar el servidor
+
+3. Ejecutar el servidor
 
 bash
 Copiar código
@@ -85,7 +87,12 @@ DELETE /api/reservas/:id
 
 ?num_huespedes=3
 
-?fecha_inicio=2023-05-01&fecha_fin=2023-05-31
+Filtrar por rango de fechas: 
+Este filtro permite obtener reservas entre dos fechas específicas.
+Usa ambos parámetros: fecha_inicio y fecha_fin, en formato YYYY-MM-DD.
+Ejemplo:
+?fecha_inicio=2025-07-01&fecha_fin=2025-07-15
+(Obtiene todas las reservas entre el 1 y el 15 de julio de 2025)
 
 🧪 Herramientas para probar
 Puedes usar herramientas como Postman, Insomnia o Thunder Client (VS Code) para realizar peticiones a la API.
@@ -97,4 +104,4 @@ Proyecto realizado por Katherine Fuenzalida como parte del Bootcamp Fullstack 20
 📝 Notas
 Los datos se almacenan en memoria, por lo que se reinician al apagar el servidor.
 
-Este proyecto puede escalar fácilmente conectándolo a una base de datos como MongoDB.
+Este proyecto puede escalar fácilmente conectándolo a una base de datos como MongoDB. Las evidencias de ejecución de endpoints se encuentran en la carpeta del proyecto P4. 
