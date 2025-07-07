@@ -2,13 +2,19 @@
 
 Este proyecto consiste en el desarrollo de una API RESTful utilizando Node.js y Express para la gestión de reservas en hoteles. La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar), además de varios filtros para buscar reservas por distintos criterios.
 
+# 🚀 Despliegue en Render
+
+🔗 [Ver API en Render](https://p4-ya0f.onrender.com/)
 
 # Tecnologías utilizadas
 
 - Node.js  
-- Express  
+- Express 
+- Swagger (OpenAPI)
+- Render (Hosting) 
 - Nodemon (para desarrollo)  
 - JavaScript
+- Postman (para pruebas locales)
 
 # 📁 Estructura del proyecto
 
