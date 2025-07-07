@@ -6,6 +6,16 @@ Este proyecto consiste en el desarrollo de una API RESTful utilizando Node.js y 
 
 🔗 [Ver API en Render](https://p4-ya0f.onrender.com/)
 
+# 📄 Documentación Swagger
+
+La API está documentada con Swagger (OpenAPI 3.0.3).
+
+🔍 [Ver documentación Swagger](https://p4-ya0f.onrender.com/api-docs)
+
+Incluye modelos definidos en `components > schemas` como:
+- `Reserva`: Modelo completo de reserva con ID.
+- `ReservaInput`: Modelo de entrada para crear o editar reservas.
+
 # Tecnologías utilizadas
 
 - Node.js  
@@ -29,6 +39,8 @@ reservas-api/
 ├── .gitignore // Ignorar node_modules, .env, etc.
 ├── package.json
 └── README.md
+└── prettierignore
+└── prettierrc
 
 ## 🔌 Instalación y ejecución
 
