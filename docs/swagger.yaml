@@ -21,4 +21,69 @@ paths:
           schema:
             type: string
             format: date
-        - in:
+        - in: query
+          name: fecha_fin
+          schema:
+            type: string
+            format: date
+        - in: query
+          name: tipo_habitacion
+          schema:
+            type: string
+        - in: query
+          name: estado
+          schema:
+            type: string
+        - in: query
+          name: num_huespedes
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Lista de reservas (filtradas o no)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Reserva'
+    post:
+      summary: Crear una nueva reserva
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReservaInput'
+      responses:
+        '201':
+          description: Reserva creada exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reserva'
+
+  /api/reservas/{id}:
+    get:
+      summary: Obtener una reserva por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Detalle de la reserva
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reserva'
+        '404':
+          description: Reserva no encontrada
+
+    put:
+      summary: Actualizar una reserva por ID
+      parameters:
+        - in: path
+          name: id
