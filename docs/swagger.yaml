@@ -3,35 +3,22 @@ info:
   title: API de Reservas Hoteleras
   version: 1.0.0
   description: API para gestionar reservas en hoteles con operaciones CRUD y filtros.
+
 servers:
   - url: http://localhost:3000
+
 paths:
-  # aquí va la definición de tus rutas...
-components:
-  schemas:
-    Reserva:
-      type: object
-      properties:
-        id:
-          type: integer
-          example: 1
-        hotel:
-          type: string
-          example: Hotel No estoy
-        tipo_habitacion:
-          type: string
-          example: doble
-        num_huespedes:
-          type: integer
-          example: 2
-        fecha:
-          type: string
-          format: date
-          example: 2023-05-15
-        fecha_fin:
-          type: string
-          format: date
-          example: 2023-05-20
-        estado:
-          type: string
-          example: confirmada
+  /api/reservas:
+    get:
+      summary: Obtener todas las reservas o filtrarlas por query
+      parameters:
+        - in: query
+          name: hotel
+          schema:
+            type: string
+        - in: query
+          name: fecha_inicio
+          schema:
+            type: string
+            format: date
+        - in:
