@@ -47,6 +47,7 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Reserva'
+
     post:
       summary: Crear una nueva reserva
       requestBody:
@@ -87,3 +88,81 @@ paths:
       parameters:
         - in: path
           name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReservaInput'
+      responses:
+        '200':
+          description: Reserva actualizada correctamente
+
+    delete:
+      summary: Eliminar una reserva por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Reserva eliminada exitosamente
+
+components:
+  schemas:
+    Reserva:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        hotel:
+          type: string
+          example: Hotel No estoy
+        tipo_habitacion:
+          type: string
+          example: doble
+        num_huespedes:
+          type: integer
+          example: 2
+        fecha:
+          type: string
+          format: date
+          example: 2023-05-15
+        fecha_fin:
+          type: string
+          format: date
+          example: 2023-05-20
+        estado:
+          type: string
+          example: confirmada
+
+    ReservaInput:
+      type: object
+      required:
+        - hotel
+        - tipo_habitacion
+        - num_huespedes
+        - fecha
+        - fecha_fin
+        - estado
+      properties:
+        hotel:
+          type: string
+        tipo_habitacion:
+          type: string
+        num_huespedes:
+          type: integer
+        fecha:
+          type: string
+          format: date
+        fecha_fin:
+          type: string
+          format: date
+        estado:
+          type: string
