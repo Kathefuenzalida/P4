@@ -116,7 +116,7 @@ components:
           example: 1
         hotel:
           type: string
-          example: Hotel Paraíso
+          example: Hotel No estoy
         tipo_habitacion:
           type: string
           example: doble
