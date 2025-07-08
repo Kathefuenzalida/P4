@@ -1,3 +1,12 @@
+openapi: 3.0.3
+info:
+  title: API de Reservas Hoteleras
+  version: 1.0.0
+  description: API para gestionar reservas en hoteles con operaciones CRUD y filtros.
+servers:
+  - url: http://localhost:3000
+paths:
+  # aquí va la definición de tus rutas...
 components:
   schemas:
     Reserva:
@@ -19,7 +28,7 @@ components:
           type: string
           format: date
           example: 2023-05-15
-        fecha_fin:                 
+        fecha_fin:
           type: string
           format: date
           example: 2023-05-20
