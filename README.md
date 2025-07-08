@@ -1,6 +1,6 @@
 # 📚 Proyecto 4: API de Reservas Hoteleras
 
-Este proyecto consiste en el desarrollo de una API RESTful utilizando Node.js y Express para la gestión de reservas en hoteles. La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar), además de varios filtros para buscar reservas por distintos criterios.
+Este proyecto consiste en el desarrollo de una API RESTful utilizando Node.js y Express para la gestión de reservas en hoteles. La API permite realizar operaciones CRUD (Create, Read, Update, Delete), además de varios filtros para buscar reservas por distintos criterios.
 
 # 🚀 Despliegue en Render
 
@@ -106,11 +106,11 @@ DELETE /api/reservas/:id
 ?num_huespedes=3
 
 Filtrar por rango de fechas: 
-Este filtro permite obtener reservas entre dos fechas específicas.
-Usa ambos parámetros: fecha_inicio y fecha_fin, en formato YYYY-MM-DD.
-Ejemplo:
-?fecha_inicio=2025-07-01&fecha_fin=2025-07-15
-(Obtiene todas las reservas entre el 1 y el 15 de julio de 2025)
+Este filtro permite obtener reservas entre dos fechas específicas a través de los parámetros: 
+
+fecha_inicio : Date (YYYY-MM-DD)
+
+fecha_fin : Date (YYYY-MM-DD)
 
 🧪 Herramientas para probar
 Puedes usar herramientas como Postman, Insomnia o Thunder Client (VS Code) para realizar peticiones a la API.
