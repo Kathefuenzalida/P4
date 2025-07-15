@@ -33,6 +33,7 @@ reservas-api/
 ├── controllers/
 │ └── reservasController.js // Lógica de negocio para las reservas
 ├── routes/
+├── docs/
 │ └── reservasRoutes.js // Definición de las rutas de la API
 ├── server.js // Punto de entrada de la aplicación
 ├── .env // Variables de entorno (puerto, etc.)
