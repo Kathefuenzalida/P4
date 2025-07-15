@@ -22,9 +22,9 @@ Incluye modelos definidos en `components > schemas` como:
 - Express 
 - Swagger (OpenAPI)
 - Render (Hosting) 
-- Nodemon (para desarrollo)  
+- Nodemon (desarrollo)  
 - JavaScript
-- Postman (para pruebas locales)
+- Postman (pruebas locales)
 
 # 📁 Estructura del proyecto
 
@@ -117,9 +117,9 @@ Puedes usar herramientas como Postman, Insomnia o Thunder Client (VS Code) para 
 
 ✍️ Autora
 Proyecto realizado por Katherine Fuenzalida como parte del Bootcamp Fullstack 2025.
-👩‍💻 Ingeniera Civil Industrial y Product Owner.
+👩‍💻 Ingeniera Civil Industrial y Product Owner Scrum.
 
 📝 Notas
 Los datos se almacenan en memoria, por lo que se reinician al apagar el servidor.
 
-Este proyecto puede escalar fácilmente conectándolo a una base de datos como MongoDB. Las evidencias de ejecución de endpoints se encuentran en la carpeta del proyecto P4. 
+Este proyecto puede escalar fácilmente conectándolo a una base de datos como MongoDB. Las evidencias de ejecución de endpoints se encuentran en la carpeta docs del proyecto P4. 
