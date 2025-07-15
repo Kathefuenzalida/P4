@@ -31,17 +31,26 @@ Incluye modelos definidos en `components > schemas` como:
 ```bash
 reservas-api/
 ├── controllers/
-│   └── reservasController.js          # Lógica de negocio para las reservas
+│   └── reservasController.js              # Lógica de negocio para las reservas
+├── docs/                                  # Documentación de la API
+│   ├── DELETE ID method.png
+│   ├── GET ID method.png
+│   ├── GET method.png
+│   ├── POST method.png
+│   ├── PUT ID method.png
+│   └── swagger.yaml                       # Definición de la API con Swagger
+├── node_modules/                          # Dependencias instaladas (ignorado en Git)
 ├── routes/
-│   └── reservasRoutes.js              # Definición de las rutas de la API
-├── docs/                              # Documentación de Swagger
-├── server.js                          # Punto de entrada de la aplicación
-├── .env                               # Variables de entorno (puerto, etc.)
-├── .gitignore                         # Ignorar node_modules, .env, etc.
-├── package.json                       # Configuración y dependencias
-├── README.md                          # Documentación del proyecto
-├── prettierignore                     # Archivos ignorados por Prettier
-└── prettierrc                         # Configuración de Prettier
+│   └── reservasRoutes.js                  # Definición de las rutas de la API
+├── .env                                   # Variables de entorno (puerto, etc.)
+├── .gitignore                             # Ignorar node_modules, .env, etc.
+├── .prettierignore                        # Archivos ignorados por Prettier
+├── package-lock.json                      # Registro de dependencias exactas
+├── package.json                           # Configuración y dependencias del proyecto
+├── prettierrc                             # Configuración de Prettier
+├── README.md                              # Documentación del proyecto
+└── server.js                              # Punto de entrada de la aplicación
+
 
 ## 🔌 Instalación y ejecución
 
