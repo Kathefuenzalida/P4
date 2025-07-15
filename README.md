@@ -29,7 +29,7 @@ Incluye modelos definidos en `components > schemas` como:
 # 📁 Estructura del proyecto
 
 ```bash
-reservas-api/
+P4/
 ├── controllers/
 │   └── reservasController.js              # Lógica de negocio para las reservas
 ├── docs/                                  # Documentación de la API
@@ -45,11 +45,7 @@ reservas-api/
 ├── .env                                   # Variables de entorno (puerto, etc.)
 ├── .gitignore                             # Ignorar node_modules, .env, etc.
 ├── .prettierignore                        # Archivos ignorados por Prettier
-├── package-lock.json                      # Registro de dependencias exactas
-├── package.json                           # Configuración y dependencias del proyecto
-├── prettierrc                             # Configuración de Prettier
-├── README.md                              # Documentación del proyecto
-└── server.js                              # Punto de entrada de la aplicación
+├── package-lock.json
 
 
 ## 🔌 Instalación y ejecución
