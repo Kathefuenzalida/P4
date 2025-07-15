@@ -45,7 +45,11 @@ P4/
 ├── .env                                   # Variables de entorno (puerto, etc.)
 ├── .gitignore                             # Ignorar node_modules, .env, etc.
 ├── .prettierignore                        # Archivos ignorados por Prettier
-├── package-lock.json
+├── package-lock.json                      # Registro de dependencias exactas
+├── package.json                           # Configuración y dependencias del proyecto
+├── prettierrc                             # Configuración de Prettier
+├── README.md                              # Documentación del proyecto
+└── server.js                              # Punto de entrada de la aplicación
 
 
 ## 🔌 Instalación y ejecución
